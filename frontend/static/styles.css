@@ -1,16 +1,50 @@
 body {
-	font-family: 'Segoe UI', 'Helvetica', sans-serif;
+	font-family: system-ui, sans-serif;
 	margin: 0;
 	padding: 20px;
 	background: #f5f5f5;
 }
 
+main {
+	background-image: linear-gradient(to right, #eaeaea, whitesmoke, white, whitesmoke, #eaeaea);
+	padding: 5px 10px 20px 10px;
+}
+
+.hero {
+	text-align: center; /* only center text in the hero section */
+}
+
+main p,
+main li {
+	font-weight: 300;
+}
+
+.home-button {
+	font-size: 150%;
+	border-width: 1px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	box-shadow: 2px 2px 5px lightgrey;
+	margin-top: 5px;
+}
+
+.home-button:hover {
+	background-color: #e0e0e0;
+}
+
 .app-container {
 	max-width: 1200px;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
 	gap: 20px;
+}
+
+.app-container > section {
+	margin: 2em auto 0;
+	padding: 0 0.5em 0.5em;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
 }
 
 .calendar-container,
